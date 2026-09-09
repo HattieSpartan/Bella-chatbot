@@ -1,0 +1,286 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: User asks for exercise recommendations
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_exercise
+  - action: utter_ask_exercise
+  
+- story: User asks for stretching exercises
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_stretch_exercise
+  - action: utter_ask_stretch_exercise
+   
+- story: User greets and ends the conversation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: User denies exercise recommendation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_exercise
+  - action: utter_ask_exercise
+  - intent: deny
+  - action: utter_did_that_help
+  
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_stretch_exercise
+  - action: utter_ask_stretch_exercise
+  - intent: ask_ergonomic_tips
+  - action: utter_ask_ergonomic_tips
+  
+- story: ask stress management questions
+  steps:
+  - intent: ask_stress_management
+  - action: utter_ask_stress_management
+  
+- story: ask mindfulness questions
+  steps:
+  - intent: ask_mindfulness
+  - action: utter_ask_mindfulness
+  
+- story: ask deep breathing questions
+  steps:
+  - intent: ask_deep_breathing
+  - action: utter_ask_deep_breathing
+ 
+- story: ask time management questions
+  steps:
+  - intent: ask_time_management
+  - action: utter_ask_time_management
+  
+- story: ask work life balance questions
+  steps:
+  - intent: ask_work_life_balance
+  - action: utter_ask_work_life_balance
+  
+- story: ask physical acivity questions
+  steps:
+  - intent: ask_physical_activity
+  - action: utter_ask_physical_activity
+  
+- story: ask diet tips questions
+  steps:
+  - intent: ask_diet_tips
+  - action: utter_ask_diet_tips
+  
+- story: ask healthy snacks questions
+  steps:
+  - intent: ask_healthy_snacks
+  - action: utter_ask_healthy_snacks
+  
+- story: ask hydration tips questions
+  steps:
+  - intent: ask_hydration_tips
+  - action: utter_ask_hydration_tips
+  
+- story: ask portion control questions
+  steps:
+  - intent: ask_portion_control
+  - action: utter_ask_portion_control
+  
+- story: ask shoulder exercise questions
+  steps:
+  - intent: ask_shoulder_exercise
+  - action: utter_ask_shoulder_exercise
+
+- story: ask push up exercise questions
+  steps:
+  - intent: ask_pushup_exercise
+  - action: utter_ask_pushup_exercise
+- story: ask wrist exercise questions
+  steps:
+  - intent: ask_wrist_exercise
+  - action: utter_ask_wrist_exercise
+- story: ask twist exercise questions
+  steps:
+  - intent: ask_twist_exercise
+  - action: utter_ask_twist_exercise
+- story: ask additional exercise questions
+  steps:
+  - intent: ask_additional_exercise
+  - action: utter_ask_additional_exercise
+- story: ask desk dips exercise questions
+  steps:
+  - intent: ask_desk_dips_exercise
+  - action: utter_ask_desk_dips_exercise
+- story: ask chair squats exercise questions
+  steps:
+  - intent: ask_chair_squats_exercise
+  - action: utter_ask_chair_squats_exercise
+- story: ask calf raises exercise questions
+  steps:
+  - intent: ask_calf_raises_exercise
+  - action: utter_ask_calf_raises_exercise
+- story: ask seated side bends exercise questions
+  steps:
+  - intent: ask_seated_side_bends_exercise
+  - action: utter_ask_seated_side_bends_exercise
+- story: ask seated leg extensions exercise questions
+  steps:
+  - intent: ask_seated_leg_extensions_exercise
+  - action: utter_ask_seated_leg_extensions_exercise
+- story: ask seated shoulder shrugs exercise questions
+  steps:
+  - intent: ask_seated_shoulder_shrugs_exercise
+  - action: utter_ask_seated_shoulder_shrugs_exercise
+- story: User requests leg exercises
+  steps:
+  - intent: ask_leg_exercise
+  - action: utter_ask_leg_exercise
+- story: ask seated back twists exercise questions
+  steps:
+  - intent: ask_seated_back_twists_exercise
+  - action: utter_ask_seated_back_twists_exercise
+- story: ask stretch exercise questions
+  steps:
+  - intent: ask_stretch_exercise
+  - action: utter_ask_stretch_exercise
+  
+- story: Utter Ask Neck Stretches
+  steps:
+  - intent: ask_neck_stretches
+  - action: utter_ask_neck_stretches
+
+- story: Utter Ask Shoulder Stretches
+  steps:
+  - intent: ask_shoulder_stretches
+  - action: utter_ask_shoulder_stretches
+
+- story: Utter Ask Upper Back Stretches
+  steps:
+  - intent: ask_upper_back_stretches
+  - action: utter_ask_upper_back_stretches
+
+- story: Utter Ask Spine Stretches
+  steps:
+  - intent: ask_spine_stretches
+  - action: utter_ask_spine_stretches
+
+- story: Utter Ask Chest Stretches
+  steps:
+  - intent: ask_chest_stretches
+  - action: utter_ask_chest_stretches
+
+- story: Utter Ask Wrist and Forearm Stretches
+  steps:
+  - intent: ask_wrist_forearm_stretches
+  - action: utter_ask_wrist_forearm_stretches
+
+- story: Utter Ask Hamstring Stretches
+  steps:
+  - intent: ask_hamstring_stretches
+  - action: utter_ask_hamstring_stretches
+
+- story: Utter Ask Calf Stretches
+  steps:
+  - intent: ask_calf_stretches
+  - action: utter_ask_calf_stretches
+
+- story: Greet and ask for ergonomic tips
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_ergonomic_tips
+  - action: utter_ask_ergonomic_tips
+
+- story: utter ask about desk setup
+  steps:
+  - intent: ask_desk_setup
+  - action: utter_ask_desk_setup
+
+- story: utter ask about chair position
+  steps:
+  - intent: ask_chair_position
+  - action: utter_ask_chair_position
+
+- story: utter ask about monitor placement
+  steps:
+  - intent: ask_monitor_placement
+  - action: utter_ask_monitor_placement
+
+- story: utter ask about keyboard and mouse position
+  steps:
+  - intent: ask_keyboard_mouse_position
+  - action: utter_ask_keyboard_mouse_position
+
+- story: utter ask about eye strain prevention
+  steps:
+  - intent: ask_eye_strain_prevention
+  - action: utter_ask_eye_strain_prevention
+
+- story: user asks unrelated question
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- story: user expresses frustration
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- story: user changes their mind
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- story: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+
+
+
+
+
+
+
+
+
+
