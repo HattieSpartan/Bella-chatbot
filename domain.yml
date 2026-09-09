@@ -1,0 +1,435 @@
+version: '3.1'
+intents:
+- affirm
+- ask_additional_exercise
+- ask_calf_raises_exercise
+- ask_calf_stretches
+- ask_chair_position
+- ask_chair_squats_exercise
+- ask_chest_stretches
+- ask_deep_breathing
+- ask_desk_dips_exercise
+- ask_desk_setup
+- ask_diet_tips
+- ask_ergonomic_tips
+- ask_exercise
+- ask_eye_strain_prevention
+- ask_hamstring_stretches
+- ask_healthy_snacks
+- ask_hydration_tips
+- ask_keyboard_mouse_position
+- ask_leg_exercise
+- ask_mindfulness
+- ask_monitor_placement
+- ask_neck_stretches
+- ask_physical_activity
+- ask_portion_control
+- ask_pushup_exercise
+- ask_seated_back_twists_exercise
+- ask_seated_leg_extensions_exercise
+- ask_seated_shoulder_shrugs_exercise
+- ask_seated_side_bends_exercise
+- ask_shoulder_exercise
+- ask_shoulder_stretches
+- ask_spine_stretches
+- ask_stress_management
+- ask_stretch_exercise
+- ask_time_management
+- ask_twist_exercise
+- ask_upper_back_stretches
+- ask_work_life_balance
+- ask_wrist_exercise
+- ask_wrist_forearm_stretches
+- bot_challenge
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- out_of_scope
+actions:
+- utter_greet
+- utter_happy
+- utter_out_of_scope
+- utter_ask_eye_strain_prevention
+- utter_cheer_up
+- utter_goodbye
+- utter_did_that_help
+- utter_ask_exercise
+- utter_ask_neck_stretches
+- utter_ask_shoulder_stretches
+- utter_ask_upper_back_stretches
+- utter_ask_wrist_forearm_stretches
+- utter_ask_hamstring_stretches
+- utter_ask_calf_stretches
+- utter_ask_chest_stretches
+- utter_ask_spine_stretches
+- utter_ask_shoulder_exercise
+- utter_ask_leg_exercise
+- utter_ask_pushup_exercise
+- utter_ask_wrist_exercise
+- utter_ask_twist_exercise
+- utter_ask_additional_exercise
+- utter_ask_desk_dips_exercise
+- utter_ask_chair_squats_exercise
+- utter_ask_calf_raises_exercise
+- utter_ask_seated_side_bends_exercise
+- utter_ask_seated_leg_extensions_exercise
+- utter_ask_seated_shoulder_shrugs_exercise
+- utter_ask_seated_back_twists_exercise
+- utter_ask_stretch_exercise
+- utter_ask_ergonomic_tips
+- utter_ask_desk_setup
+- utter_ask_chair_position
+- utter_ask_monitor_placement
+- utter_ask_keyboard_mouse_position
+- utter_ask_stress_management
+- utter_ask_mindfulness
+- utter_ask_deep_breathing
+- utter_ask_time_management
+- utter_ask_work_life_balance
+- utter_ask_physical_activity
+- utter_ask_diet_tips
+- utter_ask_healthy_snacks
+- utter_ask_hydration_tips
+- utter_ask_portion_control
+responses:
+  utter_greet:
+  - text: Hello! I'm Bella, your personal fitness and wellness assistant. How can I help you today?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Goodbye! Stay active and take care!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_stretch_exercise:
+  - text: |
+      Sure! Here are some stretching exercises you can do at your desk:
+
+      - Stretch 1: Neck Stretches - Gently tilt your head from side to side and forward and backward to stretch your neck muscles.
+      - Stretch 2: Shoulder Stretches - Reach one arm across your chest and gently pull it with the other arm to stretch your shoulder.
+      - Stretch 3: Upper Back Stretch - Clasp your hands together in front of you, round your back, and stretch forward.
+      - Stretch 4: Wrist and Forearm Stretches - Extend one arm in front of you, pull back your fingers with the other hand, and hold for a few seconds.
+      - Stretch 5: Hamstring Stretch - Extend one leg in front of you, hinge forward at the hips, and reach toward your toes while keeping your back straight.
+    image: "[Click here to view the images](https://www.verywellfit.com/best-stretches-for-office-workers-1231153)\n[Image 1](https://www.healthline.com/health/fitness-exercise/upper-back-pain-exercises#2)\n[Image 2](https://backintelligence.com/desk-stretches/)\n"
+  utter_ask_neck_stretches:
+  - text: |
+      Sure! Here are some neck stretches you can do at your desk:
+
+      1. Neck Side Stretch: Gently tilt your head to one side, bringing your ear closer to your shoulder. Hold for 15 seconds and then repeat on the other side.
+      2. Neck Rotation: Slowly turn your head to one side, trying to look over your shoulder. Hold for 15 seconds and then repeat on the other side.
+      3. Chin to Chest: Slowly lower your chin towards your chest, feeling a stretch in the back of your neck. Hold for 15 seconds.
+      4. Neck Extension: Tilt your head backward, looking up towards the ceiling. Hold for 15 seconds.
+      5. Lateral Extension: Tilt your head to one side, bringing your ear closer to your shoulder. Hold for 15 seconds and then repeat on the other side.
+      6. Tilted Forward Flexion: Gently bend your head forward, bringing your chin towards your chest. Hold for 15 seconds.
+      7. Deep Stretching Resistance: Place one hand on the side of your head and gently press against it, feeling a stretch in your neck muscles. Hold for 15 seconds and then repeat on the other side.
+      8. Towel Pull: Hold a towel behind your head with both hands, and gently pull down with your hands, feeling a stretch in your neck muscles. Hold for 15 seconds.
+    image: https://thcboneandjoint.com/educational-resources/neck-exercises.html
+  utter_ask_shoulder_stretches:
+  - text: |
+      Sure! Here are some shoulder stretches you can do at your desk:
+
+      1. Shoulder Roll: Roll your shoulders forward in a circular motion for 10 seconds, and then roll them backward for another 10 seconds.
+      2. Shoulder Stretch: Extend one arm across your chest and gently pull it with the other arm, feeling a stretch in your shoulder. Hold for 15 seconds and then repeat on the other side.
+      3. Shoulder Blade Squeeze: Sit up straight and squeeze your shoulder blades together, holding for 10 seconds before releasing.
+    image: "- \"https://myhealth.alberta.ca/Health/aftercareinformation/pages/conditions.aspx?hwid=ad1512\"\n- \"https://greatist.com/move/stretches-for-tight-shoulders\"\n"
+  utter_ask_upper_back_stretches:
+  - text: |
+      Sure! Here are some upper back stretches you can do at your desk:
+
+      1. Seated Cat-Cow Stretch: Sit up straight and round your upper back while tucking your chin towards your chest. Then arch your back and look up, feeling a stretch in your upper back. Repeat for 10 reps.
+      2. Upper Back Twist: Sit up straight and twist your upper body to one side, placing your opposite hand on the outside of your thigh for support. Hold for 15 seconds and then twist to the other side.
+      3. Shoulder Blade Squeeze: Sit up straight and squeeze your shoulder blades together, holding for 10 seconds before releasing.
+    image: "- \"https://ergonomictrends.com/best-stretches-to-improve-back-pain-at-the-desk/\"\n- \"https://www.healthline.com/health/back-pain/deskercize-upper-back#shoulder-rolls\"\n- \"https://www.eliteorthopaedic.com/blog/help-prevent-back-pain-with-these-5-stretches-you-can-do-from-a-desk-chair\"\n"
+  utter_ask_spine_stretches:
+  - text: |
+      Sure! Here are some spine stretches you can do at your desk:
+
+      1. Seated Cat-Cow Stretch: Sit tall in your chair and place your hands on your knees. Round your back, tucking your chin towards your chest, and then arch your back, lifting your chest and looking up. Repeat this cat-cow movement for 10 reps.
+      2. Seated Spinal Twist: Sit tall in your chair and place one hand on the outside of the opposite thigh. Rotate your torso to the side, looking over your shoulder, and feel a gentle twist in your spine. Hold for 15 seconds and then repeat on the other side.
+      3. Standing Side Bend: Stand with your feet shoulder-width apart and reach one arm overhead. Lean to the side, feeling a stretch along the opposite side of your body. Hold for 15 seconds and then repeat on the other side.
+    image: https://ergonomictrends.com/best-stretches-to-improve-back-pain-at-the-desk/
+  utter_ask_chest_stretches:
+  - text: |
+      Sure! Here are some chest stretches you can do at your desk:
+
+      1. Seated Chest Opener: Sit tall in your chair and interlace your fingers behind your back. Straighten your arms and lift them away from your body, feeling a stretch in your chest. Hold for 15 seconds.
+      2. Doorway Chest Stretch: Stand in a doorway and place your forearms on the doorframe. Step forward with one leg to feel a stretch in your chest. Hold for 15 seconds and then switch legs.
+      3. Standing Wall Slide: Stand with your back against a wall and place your elbows and forearms against the wall. Slowly slide your arms up and down the wall, feeling a stretch in your chest. Repeat for 10 reps.
+    image: https://www.mghf.ca/quick-desk-stretches
+  utter_ask_wrist_forearm_stretches:
+  - text: |
+      Sure! Here are some wrist and forearm stretches you can do at your desk:
+
+      1. Wrist Extension Stretch: Extend one arm in front of you, palm facing down. Use the other hand to gently pull the fingers of the extended hand towards you, feeling a stretch in your wrist and forearm. Hold for 15 seconds and then repeat with the other hand.
+      2. Wrist Flexion Stretch: Extend one arm in front of you, palm facing up. Use the other hand to gently pull the fingers of the extended hand towards you, feeling a stretch in the opposite side of your wrist and forearm. Hold for 15 seconds and then repeat with the other hand.
+      3. Forearm Pronation-Supination: Extend both arms in front of you, palms facing down. Rotate your wrists, turning your palms up and then down, feeling a stretch in your forearms. Repeat for 10 reps.
+    image: https://youaligned.com/wellness/forearm-stretches/
+  utter_ask_hamstring_stretches:
+  - text: |
+      Sure! Here are some hamstring stretches you can do at your desk:
+
+      1. Seated Hamstring Stretch: Sit towards the edge of your chair and extend one leg in front of you, keeping it straight. Lean forward, reaching towards your toes while keeping your back straight. Hold for 15 seconds and then repeat with the other leg.
+      2. Desk Forward Fold: Stand facing your desk and place your palms on the desk for support. Step back with one foot and hinge forward at the hips, keeping your back straight. Feel a stretch in your hamstrings. Hold for 15 seconds and then switch legs.
+      3. Standing Hamstring Stretch: Stand up and place one foot on an elevated surface (e.g., chair, desk). Keeping your back straight, lean forward from your hips until you feel a stretch in your hamstring. Hold for 15 seconds and then repeat with the other leg.
+    image: https://jolitabrilliant.com/5-hamstring-stretches-office-professionals/
+  utter_ask_calf_stretches:
+  - text: |
+      Sure! Here are some calf stretches you can do at your desk:
+
+      1. Seated Calf Stretch: Sit tall in your chair and extend one leg in front of you. Flex your foot, pointing your toes towards the ceiling, and hold for 15 seconds. Release and repeat with the other leg.
+      2. Desk Calf Stretch: Stand facing your desk and place your hands on the desk for support. Step one foot back, keeping your heel on the ground, and lean forward to feel a stretch in your calf. Hold for 15 seconds and then switch legs.
+      3. Wall Calf Stretch: Find a wall and stand facing it. Place your hands on the wall at shoulder height and step one foot back. Keep your heel on the ground and lean forward to stretch your calf. Hold for 15 seconds and then repeat with the other leg.
+    image: https://morelifehealth.com/seated-calf-raises
+  utter_ask_exercise:
+  - text: |-
+      Sure! Here are some desk exercises you can try:
+
+      1. Shoulder roll: Roll your shoulders forward and backward to release tension.
+      2. Seated Leg raises: Lift one leg at a time to engage your leg muscles.
+      3. Desk Push ups: Place your hands at the edge of your desk and perform push-ups.
+      4. Wrist circles: Rotate your wrists in circular motions to relieve strain.
+      5. Seated twists: Twist your torso or upper-body from side to side while seated to stretch your back.
+  utter_ask_shoulder_exercise:
+  - text: |-
+      You can try the following shoulder exercises:
+
+      1. Exercise 1: Stand with your arms slightly behind you with both thumbs down. Raise your arms up, pretending that you are emptying a can with each hand. Lower the arms slowly. Repeat 10 times.
+      2. Exercise 2: Cross your right arm over your torso so your hand is pointing left. Bend your left arm and hook it over your right arm. Gently pull the right arm towards your body. Hold for 20 seconds, then switch arms. Repeat four times.
+      3. Exercise 3: Begin on the floor in a kneeling position, keeping your knees apart and your back straight. Reach up with your arms towards the sky. Slowly bend forward until your chest touches your thighs. Keep reaching with your arms until your elbows and palms are flat on the floor. Hold for one minute, then slowly return to the starting position.
+    image: https://i.imgur.com/YU2gemI.jpeg
+  utter_ask_leg_exercise:
+  - text: |-
+      You can try the following leg exercises:
+
+      1. Lunges: Keeping your spine in an upright position, with your shoulders pulled back and your head facing straight ahead, take one step forward and drop your back knee as low to the ground as possible. Be sure to drop your hips enough so that both knees are bent at a 90-degree angle.
+      2. Single Leg Glute Bridge: Lie on a flat surface with your knees bent and both feet planted on the ground. As you raise one leg straight in the air, thrust your hips off of the ground, creating an arch in your lower back. Be sure to drive through the heel of your foot in order to contract the hamstrings and glutes as you lift off of the ground.
+      3. Low Squat Jumps: Placing your feet hip-width apart, sink your backside as low as possible before jumping into the air. By keeping your knees bent and your jumps low, you are placing more tension on your quads, hamstrings, and calves, igniting the fat-burning process as you continue the movement.
+    image: https://imgur.com/gallery/M6Yppg7
+  utter_ask_pushup_exercise:
+  - text: " push-up is a compound exercise that uses muscles in the chest, shoulders, triceps, back, abs, and even the legs.To do a push-up you are going to get on the floor on all fours, positioning your hands slightly wider than your shoulders. Don't lock out the elbows; keep them slightly bent. Extend your legs back so you are balanced on your hands and toes, your feet hip-width apart. Once in this position, here is how you will do a push-up.Contract your abs and tighten your core by pulling your belly button toward your spine.Inhale as you slowly bend your elbows and lower yourself to the floor, until your elbows are at a 90-degree angle.Exhale while contracting your chest muscles and pushing back up through your hands, returning to the start position."
+    image: https://imgur.com/gallery/YuMfz
+  utter_ask_wrist_exercise:
+  - text: |-
+      You can try the following:
+
+      1. Finger Stretch: Sit in a comfortable position with your elbow bent and your arm making a right angle. Make a fist. Slowly open your hand, spreading and stretching your fingers. Do several repetitions. Repeat with the other hand.
+      2. Dumbbell Wrist Flexion: Turn your hand over, so your palm is facing the ceiling. Keep the back of your arm against the table. Then, flex your wrist up so that your palm moves towards the ceiling. Once your wrist is fully flexed, hold the position for two to three seconds. Then, slowly lower your hand back to the starting position. Repeat the wrist flexion exercise for two to three sets of 10-15 repetitions.
+      3. Prayer Stretch: Stand with your elbows bent and your press your palms together, fingertips up, just below your chin (as if you're praying). Keeping your fingers together, lower them until you feel a stretch along the insides of your arms. Allow your palms to separate but keep your fingers together. Hold for 30 seconds. Do 2 to 4 repetitions.
+    image: https://i.imgur.com/C1TDm9t.jpeg
+  utter_ask_twist_exercise:
+  - text: The Russian twist is a simple abdominal exercise for working the core, shoulders, and hips. It is typically performed in repetitive sets and tones the core muscles via a twisting motion focused around the abdomen . Sit with your knees bent out in front of you, feet flexed, and heels on the floor.Hold your hands in front of your chest and lean your torso back until you feel your abdominal muscles engage. Slowly twist your torso from right to left. Remember to keep your core tight (and breathe!) throughout.
+    image: https://www.flickr.com/photos/cumidanciki/14275990707
+  utter_ask_additional_exercise:
+  - text: You can try planks, glute bridges, spider lunges, plank taps, squats, and side lunges.
+    image: https://imgur.com/gallery/YuMfz
+  utter_ask_desk_dips_exercise:
+  - text: Desk dips are exercises that are done using the desk as a prop. For this exercise, you'll want to make sure you have a stable desk. Start by facing away from your desk, and then place your hands shoulder-width apart on the desk with your legs extended out. Bend your arms to about a 90-degree angle, straighten, and repeat!
+    image: https://www.shutterstock.com/image-vector/woman-doing-triceps-dips-bench-2-1621991521
+  utter_ask_chair_squats_exercise:
+  - text: For this exercise, you'll want to back your chair up a good distance from the desk, then standing 6 inches in front of the chair, squat down until your backside hits the edge of your chair. Make sure you practice good posture to get the best results.
+    image: https://www.istockphoto.com/vector/exercises-that-can-be-done-at-home-using-a-sturdy-chair-gm1272256339-374579121
+  utter_ask_calf_raises_exercise:
+  - text: This exercise is ideal for strengthening your calf muscles using your own body weight. Starting with your feet together, stand behind your chair and rise up on your tippytoes, hold for about 10 seconds, and then release and repeat. It's a simple exercise that will leave you feeling stretched and revived.
+    image: https://www.flickr.com/photos/whyld/6170518300
+  utter_ask_seated_side_bends_exercise:
+  - text: This exercise stretches your obliques. Sit and cross your legs on the mat. Lift your left arm overhead and put your right hand on the floor for support. Slowly bend your right arm while bending your upper body to the right. You should feel a gentle stretch on the left side of your body. Repeat the steps now with the other hand.
+    image: https://www.shutterstock.com/image-photo/women-stretching-home-doing-seated-side-2059897520
+  utter_ask_seated_leg_extensions_exercise:
+  - text: Sit in a chair with your back straight. Lift one leg straight out from your body. Hold for five seconds. Lower to starting position. Repeat with the other leg.
+    image: https://www.istockphoto.com/vector/man-doing-single-leg-extension-exercise-flat-vector-illustration-isolated-on-white-gm1408890101-459617857
+  utter_ask_seated_shoulder_shrugs_exercise:
+  - text: Relax your arms by your side or on a table. Shrug your shoulders up to your ears. Hold this position briefly and then relax your shoulders back down. Repeat.
+    image: https://www.istockphoto.com/vector/working-office-stretches-and-exercises-to-relax-tension-muscle-gm1309029329-398863909
+  utter_ask_seated_back_twists_exercise:
+  - text: Start by sitting on the floor, with your legs straight out in front of you and your arms behind your back. Place your hands on the floor behind you with your fingers facing away from you. Take your left foot and place it flat on the ground on the outside of your right knee. Inhale and bring your right arm up. Exhale and pull your right arm down. Place your elbow on the outside of your left leg. Turn your chest, head, and eyes to the left. Hold this pose for about a minute. Breathe. Slowly bring your head first and then your chest back to center. Now repeat on the other side.
+    image: https://www.istockphoto.com/vector/stylized-yoga-illustrations-seated-gm165744884-14476288
+  utter_ask_ergonomic_tips:
+  - text: |-
+      Sure! Here are some posture/ergonomic tips you can try:
+
+      1. Sit with your back straight and supported, shoulders relaxed, feet flat on the floor and keep your head and neck aligned with your spine.
+      2 Ensure your chair height allows your feet to rest flat on the floor and your knees at a 90-degree angle.
+      3. Position your monitor at eye level, about an arm's length away, to reduce strain on your neck and eyes.
+      4. Use a keyboard and mouse that provide comfortable and natural positioning for your hands and wrists.
+    image: "- \"https://imgur.com/tbdXhhO\"\n- \"https://imgur.com/vDgTzqk\"      \n"
+  utter_ask_desk_setup:
+  - text: |-
+      To set up your desk for better ergonomics, consider the following key elements:
+
+      1. Chair: Choose an ergonomic chair with adjustable height and lumbar support.
+      2. Desk Height: Adjust the desk height so that your elbows are at a 90-degree angle when typing.
+      3. Monitor Placement: Position your monitor at eye level, about an arm's length away from you.
+      4. Keyboard and Mouse: Keep them at a comfortable distance and height to avoid strain on your wrists.
+      5. Lighting: Ensure sufficient lighting to reduce eye strain and shadows on your workspace.
+      6. Desk Organization: Arrange your frequently used items within easy reach to minimize reaching and twisting.
+      7. Cable Management: Keep cables organized and out of the way to prevent tripping hazards.
+
+      Remember to take regular breaks, stretch, and move around to maintain good posture and reduce prolonged sitting.
+    image: https://imgur.com/F7ddToH
+  utter_ask_chair_position:
+  - text: |-
+      To position your chair for better posture and ergonomic seating, follow these tips:
+
+      1. Seat Height: Adjust the chair height so that your feet are flat on the floor or on a footrest.
+      2. Knee Angle: Keep your knees at a 90-degree angle with your thighs parallel to the floor.
+      3. Backrest: Sit with your back fully supported by the chair's backrest, maintaining the natural curve of your spine.
+      4. Armrests: Adjust the armrests so that your shoulders are relaxed, and your elbows rest comfortably at a 90-degree angle.
+      5. Distance from Desk: Ensure a comfortable distance between the front edge of the seat and the edge of your desk.
+
+      Remember to make these adjustments to fit your body proportions and maintain good posture throughout your workday.
+    image: https://imgur.com/F02Dtov
+  utter_ask_monitor_placement:
+  - text: |-
+      For optimal ergonomics and proper viewing, consider the following monitor placement suggestions:
+
+      1. Position: Place your monitor directly in front of you, centered on your desk.
+      2. Eye Level: Adjust the monitor height so that the top of the screen is at or slightly below eye level.
+      3. Distance: Position the monitor about an arm's length away from you to reduce eye strain.
+      4. Tilt: Tilt the monitor slightly backward, aiming for a viewing angle of 10 to 20 degrees.
+      5. Glare and Lighting: Adjust the monitor angle and reduce glare by positioning it away from direct light sources.
+
+      Remember to customize the monitor placement based on your individual comfort and ensure that the screen is easy to read without straining your neck or eyes.
+    image: https://imgur.com/soCqB7a
+  utter_ask_keyboard_mouse_position:
+  - text: |-
+      To ensure ergonomic use of your keyboard and mouse, consider the following placement tips:
+
+      1. Keyboard: Position your keyboard directly in front of you at a comfortable distance, allowing your shoulders to relax.
+      2. Height: Adjust the keyboard height so that your forearms are parallel to the floor and your wrists are straight.
+      3. Wrist Support: Consider using a wrist rest to maintain a neutral wrist position and minimize strain.
+      4. Mouse: Place the mouse within easy reach, at the same height as the keyboard.
+      5. Mouse Grip: Hold the mouse with a relaxed grip, allowing your fingers to rest comfortably on the buttons.
+      6. Mouse Pad: Opt for a mouse pad with a wrist cushion to provide additional support.
+
+      Remember to take short breaks, stretch your hands and fingers, and listen to your body to maintain comfort and prevent repetitive strain injuries.
+    image: "- \"https://imgur.com/n96kdPY\"\n- \"https://imgur.com/Zrnb2Af\"\n"
+  utter_ask_eye_strain_prevention:
+  - text: |-
+      To prevent eye strain while working at a computer and reduce eye fatigue during desk work, consider the following tips:
+
+      1. Monitor Position: Position your monitor at arm's length away and slightly below eye level to reduce eye strain.
+      2. Lighting: Ensure proper lighting in your workspace, avoiding excessive brightness or glare on the screen.
+      3. Breaks and Blinking: Take regular breaks to rest your eyes and remember to blink frequently to keep your eyes lubricated.
+      4. 20-20-20 Rule: Every 20 minutes, look away from the screen and focus on an object about 20 feet away for 20 seconds.
+      5. Screen Settings: Adjust the brightness, contrast, and font size of your screen to optimize readability.
+      6. Eye Exercises: Practice eye exercises, such as eye rolls and focusing on different distances, to relax your eye muscles.
+      7. Proper Eye Care: Maintain good eye hygiene, keep your eyes moisturized, and consider using artificial tears if needed.
+
+      Remember to have regular eye check-ups and consult with an eye care professional for personalized recommendations.
+    image: https://imgur.com/8ksFg4W
+  utter_ask_stress_management:
+  - text: |
+      Sure! Here are some stress management activities you can engage in:
+
+      1. visualization: Visualize one of the most relaxing scenes you can imagine – a beach, the top of a mountain, your favorite chair in the living room, or any other place you'd love to be.
+      2. progressive muscle relaxation: Focus on slowly tensing and then relaxing your muscles, one group at a time. Start with your toes and work your way up to your neck.
+      3. deep breathing: Deep breathing increases the supply of oxygen to your brain and helps promote a state of calmness.
+      4. Massage your ears: Massage your ear gently, right in the middle of the upper third of your ear. This spot called the Shen Men point reportedly decreases stress and boosts energy.
+      5. Progressive muscle relaxation: Focus on slowly tensing and then relaxing your muscles, one group at a time. Start with your toes and work your way up to your neck.
+      6. The 4-7-8 breathing exercise: The exercise is performed in three easy steps which include Breathing in for 4 seconds, Holding your breath for 7 seconds, and Breathing out slowly for 8 seconds.
+  utter_ask_mindfulness:
+  - text: |
+      Sure! The following mindfulness practices are tips for being more present and focused during work and relieving stress at your desk: 
+      1. Minute meditation: Taking a minute to be more mindful could be as simple as just taking a mindful moment to give your brain a break
+      2. Mindful stretching: Mindful stretching can be as simple as getting up from your chair and taking time to focus on your breathing
+      3. Taking time away from the desk: Taking time away from your desk also forces you to slow down and take a break, allowing you to rejuvenate and return feeling more motivated and focused.
+  utter_ask_deep_breathing:
+  - text: |
+      Sure! The calming breathing technique for stress, anxiety, and panic you can do at your desk using the steps below:
+
+      1. If you're sitting, place your arms on the chair arms, If you're sitting or standing, place both feet flat on the ground. 
+      2. Whatever position you're in, place your feet roughly hip-width apart, Let your breath flow as deep down into your belly as is comfortable, without forcing it. 
+      3. Try breathing in through your nose and out through your mouth. Breathe in gently and regularly, count steadily from 1 to 5. 
+      4. You may not be able to reach 5 at first. Then let it flow out gently, counting from 1 to 5 again.
+      5. Keep doing this for at least 5 minutes.
+  utter_ask_time_management:
+  - text: |
+      Sure! here are some time management tips at work to help reduce stress through prioritizing tasks and deadlines:
+      1. setting your priorities 
+      2. breaking the thing that need to be done down
+      3. creating a work schedule
+      4. focusing on quality rather than quantity
+      5. avoiding distractions
+      6. getting help from experts.
+  utter_ask_work_life_balance:
+  - text: |
+      Sure! Some strategies to improve work-life balance include:
+
+      1. planning ahead
+      2. practicing mindfulness
+      3. taking time off
+      4. setting blocks of time for different tasks
+      5. eating lunch out, and finding something you love outside of work. 
+  utter_ask_physical_activity:
+  - text: |
+      Sure! You can incorporate physical activities while desk-bound by:
+      1. taking the stairs instead of the lift
+      2. having walking meetings and walking breaks
+      3. doing standing desk and desk exercises.
+  - text: |
+      Sure! Some exercises and stretches you can do during breaks in the office include:
+
+      1. arm raises
+      2. ankle stretching
+      3. neck stretching
+      4. hip march exercises
+      5. upper body twists
+      6. leg kicks. 
+  utter_ask_diet_tips:
+  - text: |
+      Sure! Here are some strategies you may want to implement for healthy eating at work: 
+
+      1. Educate yourself about the best foods for the workplace
+      2. eat a healthy breakfast
+      3. eat regular meals
+      4. create a routine
+      5. leave your desk to eat
+      6. snack frequently 
+      7. drink water
+      8. pack the ideal lunch. 
+  utter_ask_healthy_snacks:
+  - text: |
+      Sure! Here is a list of 10 healthy snacks to keep at work that are also nutritious and filling: 
+
+      1.Nuts
+      2. popcorn
+      3. fruits
+      4. veggies
+      5. dark chocolate
+      6. yogurt
+      7. oatmeal
+      8. smoothies
+      9. toasts
+      10. pudding
+  utter_ask_hydration_tips:
+  - text: |
+      Sure! Here are some tips you can use to drink more water during working hours to ensure proper hydration: 
+
+      1.Add a natural fruit to make a tasty infusion
+      2.use a drinking water app
+      3.take advantage of a reusable water bottle
+      4.eat water-rich foods like fruits and vegetables. 
+  utter_ask_portion_control:
+  - text: |
+      Sure! You can practice portion control while at the desk by using the following three tips:
+
+      1. Load up on colorful veggies: Loading up on veggies helps you shed those extra kilos and helps improve your overall nutritional status.
+      2. Eat before you are too hungry: When we realize we are hungry and sit down for a meal, we are probably famished. Low blood sugar levels coupled with dehydration will make us polish off the plate in no time.
+      3. Don’t Eat from a Bag or Box Directly: If you cannot do without your favorite chips or cookies, divide the content into small serving sizes of say five to ten beforehand. This way, when you are hungry or eating out of boredom directly from a bag or box, you will not end up eating the entire portion.     
+  utter_out_of_scope:
+  - text: I'm sorry, but that question is outside the scope of my expertise in wellness and fitness.If you have any queries related to fitness, exercise, ergonomics or mindfilness, feel free to ask.
+  - text: Apologies, but I don't have the information you're looking for as it falls outside the scope of wellness and fitness.
+  - text: Unfortunately, I can only provide assistance and information related to wellness and fitness. I'm unable to answer that question.
+  - text: I'm here to help with wellness and fitness-related inquiries. For other topics, I recommend seeking the appropriate resources or experts.
+  - text: I appreciate your question, but let's focus on wellness and fitness topics. Is there anything specific you would like to know about health, exercise, or nutrition?
+  - text: That's an interesting question, but let's keep the conversation centered around wellness and fitness. Feel free to ask me anything related to health, exercise, or nutrition.
+  - text: While I'm here to assist with wellness and fitness topics, is there something specific you would like to learn about? I'm happy to help!
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
