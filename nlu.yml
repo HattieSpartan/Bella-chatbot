@@ -1,0 +1,573 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - morning
+    - mrng
+    - hey there
+    - let's go
+    - hey dude
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - see you
+    - good bye
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - yeah
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - ok
+    - why not
+    - ok great
+    - yes I did
+    - yeah, great
+    - pretty good
+    - fine
+    - you bet
+    - I sure did
+    - more or less
+    - thank you
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - i don't like that
+    - no way
+    - not really
+    - none
+    - absolutely not
+    - no thanks
+    - didn't do any
+    - could have been better
+    - not great
+    - nope
+- intent: out_of_scope
+  examples: |
+    - that's not what I want to do
+    - wait stop
+    - you are no help
+    - this is no help at all
+    - how old are you
+    - tell me the weather
+    - am I ugly
+    - this isn't working
+    - I already told you that
+    - I don't want to tell you that
+    - none of your business
+    - that's not right
+    - stop asking
+    - nevermind
+    - I want to do something else
+    - I changed my mind
+    - What is the capital city of France?
+    - How do I fix a leaking faucet?
+    - Can you recommend a good restaurant in my area?
+    - What are the latest fashion trends for this season?
+    - How do I solve a Rubik's Cube?
+    - What is the release date of the new Avengers movie?
+    - Can you help me with my math homework?
+    - What is the history of the Eiffel Tower?
+    - How do I change the oil in my car?
+    - What is the best way to learn a new language?
+    - what is your age?
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: ask_exercise
+  examples: |
+    - What exercises can I do at my desk?
+    - exercises?
+    - Give me some desk exercises?
+    - What are some exercises that I can do at home?
+    - Show me exercises for desk-bound workers?
+    - Desk exercises?
+    - Can you recommend a workout that I can do in 30 minutes?
+    - Get exercises for working at a desk?
+    - Ask for exercise recommendations?
+    - How can I do cardiovascular exercise without living my desk?
+- intent: ask_shoulder_exercise
+  examples: |
+    - What shoulder exercises can I do?
+    - shoulder exercises?
+    - Any suggestions for shoulder exercises?
+    - Can you help me find a beginner shoulder workout plan?
+    - Can you recommend a shoulder workout that I can do in 30 minutes?
+    - What exercises can i do to strengthen my shoulders?
+    - Can you recommend some shoulder exercises?
+    - What are some shoulder exercises I can do at a desk?
+- intent: ask_leg_exercise
+  examples: |
+    - What leg exercises can I do?
+    - leg exercise?
+    - Any suggestions for leg exercises?
+    - What are the best leg exercises?
+    - how to stregthen your lower body?
+    - What are some leg exercises that I can do at home?
+    - Can you give me some leg exercises?
+    - I want to work on my legs, what exercises should I do?
+    - Can you recommend some leg exercises?
+- intent: ask_pushup_exercise
+  examples: |
+    - What is a pushup?
+    - pushup exercises?
+    - What push-up exercises can I do?
+    - What are some good push-up exercises for beginners?
+    - Any suggestions for push-up exercises?
+    - I'm looking for a push-up workout that I can do at home.
+    - I want to do push-ups, what variations should I try?
+    - Can you recommend some push-up exercises?
+- intent: ask_wrist_exercise
+  examples: |
+    - What wrist exercises can I do?
+    - wrist exercises?
+    - What are some wrist exercises that I can do at home?
+    - What are some wrist exercises that are safe for people with arthritis?
+    - What are some wrist exercises that I can do without any equipment?
+    - Any suggestions for exercises to strengthen the wrists?
+    - I have weak wrists, what exercises should I do?
+    - Can you recommend some wrist exercises?
+- intent: ask_twist_exercise
+  examples: |
+    - What is a twist exercise?
+    - twist exercise?
+    - What twisting exercises can I do?
+    - Any suggestions for exercises that involve twisting?
+    - I want to do exercises that involve twisting, what should I try?
+    - Can you recommend some twisting exercises?
+    - What are some twist exercises that I can do to improve my core strength?
+- intent: ask_additional_exercise
+  examples: |
+    - What are some other exercises for desk-bound workers?
+    - additional exercises?
+    - Can you suggest more exercises to stay active at my desk?
+    - Are there any other desk exercises I should try?
+    - I want to add variety to my desk workout routine.
+    - Are there any other exercises that I should start with?
+- intent: ask_desk_dips_exercise
+  examples: |
+    - What are dip exercises?
+    - How do I perform desk dips?
+    - Can you explain the desk dips exercise?
+    - what are desk dips?
+    - desk dips exercises?
+    - What are some desk dips i can do if I'm a beginner?
+    - Tell me more about the desk dips exercise?
+- intent: ask_chair_squats_exercise
+  examples: |
+    - What are squat exercises?
+    - How do I do chair squats?
+    - What are chair squats?
+    - Can you explain the chair squats exercise?
+    - What are some chair squats i can do if I'm a beginner?
+    - chair squats exercises?
+    - Tell me more about the chair squats exercise?
+- intent: ask_calf_raises_exercise
+  examples: |
+    - What are calf raise exercises?
+    - How do I perform calf raises?
+    - calf raises exercises?
+    - How many calf raises should I do?
+    - How often should I do calf raises?
+    - calf raises exercises for beginners?
+    - Can you explain the calf raises exercise?
+    - Tell me more about the calf raises exercise?
+- intent: ask_seated_side_bends_exercise
+  examples: |
+    - What are side bend exercises?
+    - How do I do seated side bends?
+    - What is the correct form for seated side bends?
+    - seated side bends exercise?
+    - How many seated side bends should I do?
+    - How often should I do seated side bends?
+    - Can you explain the seated side bends exercise?
+    - Tell me more about the seated side bends exercise.
+- intent: ask_seated_leg_extensions_exercise
+  examples: |
+    - What are leg extension exercises?
+    - How do I perform seated leg extensions?
+    - seated leg extensions?
+    - What is the correct form for seated leg extensions?
+    - How many seated leg extensions should I do?
+    - How often should I do seated leg extensions?
+    - Can you explain the seated leg extensions exercise?
+    - Tell me more about the seated leg extensions exercise?
+- intent: ask_seated_shoulder_shrugs_exercise
+  examples: |
+    - What are shoulder shrugs exercises?
+    - How do I do seated shoulder shrugs?
+    - seated shoulder shrugs exercise?
+    - Can I do seated shoulder shrugs if I have shoulder pain?
+    - What is the correct form for seated shoulder shrugs?
+    - How many seated shoulder shrugs should I do?
+    - How often should I do seated shoulder shrugs?
+    - Can you explain the seated shoulder shrugs exercise?
+    - Tell me more about the seated shoulder shrugs exercise?
+- intent: ask_seated_back_twists_exercise
+  examples: |
+    - What are seated back twist exercises?
+    - How do I perform seated back twists?
+    - Seated back twists exercises?
+    - How many seated back twists should I do?
+    - How often should I do seated back twists?
+    - Seated back twists exercises for beginners?
+    - Can you explain the seated back twists exercise?
+    - Tell me more about the seated back twists exercise?
+- intent: ask_stretch_exercise
+  examples: |
+    - How can I stretch at my desk?
+    - Desk stretching exercises?
+    - Stretching for desk workers?
+    - Stretch exercises?
+    - How long should I hold a stretch?
+    - How often should I stretch?
+    - Get stretching exercises for sitting at a desk?
+    - Ask for desk stretching routines?
+    - Are there any streches that I can do to relieve tension in my neck?
+    - Are there any streches that I can do to relieve tension in my hands?
+    - I need to stretch what do i do?
+- intent: ask_neck_stretches
+  examples: |
+    - What are some neck stretches for desk-bound workers?
+    - Can you suggest exercises to relieve neck tension at my desk?
+    - How can I stretch my neck while sitting?
+    - Neck stretches?
+    - What is the correct form for a neck stretch?
+    - How long should I hold a neck stretch?
+    - How often should I stretch my neck?
+- intent: ask_shoulder_stretches
+  examples: |
+    - What are some shoulder stretches for desk-bound workers?
+    - Can you suggest exercises to loosen up my shoulders at my desk?
+    - How can I stretch and relax my shoulder muscles while sitting?
+    - Shoulder stretches exercises?
+    - What is the correct form for a shoulder stretch?
+    - How long should I hold a shoulder stretch?
+    - How often should I stretch my shoulders?
+    - Can I do shoulder stretches every day?
+- intent: ask_upper_back_stretches
+  examples: |
+    - What are some upper back stretches for desk-bound workers?
+    - Upper back stretches exercises?
+    - Can you suggest exercises to relieve upper back pain at my desk?
+    - What is the correct form for an upper back stretch?
+    - How long should I hold an upper back stretch?
+    - How often should I stretch my upper back?
+    - What are some upper back stretches that I can do at home to improve my sleep?
+    - How can I stretch my upper back muscles while sitting?
+- intent: ask_wrist_forearm_stretches
+  examples: |
+    - What are some wrist and forearm stretches for desk-bound workers?
+    - Can you suggest exercises to prevent wrist and forearm strain at my desk?
+    - What are some wrist stretches that I can do at home?
+    - Wrist forearm stretches?
+    - What is the correct form for a wrist forearm stretch?
+    - How often should I stretch my wrist forearm?
+    - How can I stretch and improve flexibility in my wrists and forearms while sitting?
+- intent: ask_hamstring_stretches
+  examples: |
+    - What are some hamstring stretches for desk-bound workers?
+    - Can you suggest exercises to stretch my hamstrings while sitting?
+    - How often should I stretch my hamstrings?
+    - Hamstring stretches?
+    - What are the different types of hamstring stretches?
+    - How do you do a hamstring stretch?
+    - What are some hamstring stretches that I can do at home to improve my sleep?
+    - What is the correct form for a hamstring stretch?
+    - How can I improve flexibility in my hamstrings at my desk?
+- intent: ask_calf_stretches
+  examples: |
+    - What are some calf stretches for desk-bound workers?
+    - Calf stretches?
+    - What are the different types of calf stretches?
+    - How do you do a calf stretch?
+    - What is the best way to stretch my calves?
+    - How long should I hold a calf stretch?
+    - How often should I stretch my calves?
+    - Can you suggest exercises to stretch my calves while sitting?
+    - How can I relieve tightness in my calves at my desk?
+- intent: ask_chest_stretches
+  examples: |
+    - What are some chest stretches for desk-bound workers?
+    - Can you suggest exercises to open up my chest at my desk?
+    - Chest stretches?
+    - What are the different types of chest stretches?
+    - How do you do a chest stretch?
+    - What are the benefits of chest stretches?
+    - What is the best way to stretch my chest?
+    - What are some common mistakes people make when stretching their chest?
+    - How long should I hold a chest stretch?
+    - How often should I stretch my chest?
+    - How can I stretch my chest muscles while sitting?
+- intent: ask_spine_stretches
+  examples: |
+    - What are some spine stretches for desk-bound workers?
+    - Can you suggest exercises to improve spinal mobility while sitting?
+    - How can I stretch and release tension in my spine at my desk?
+    - Spine stretches?
+    - Do spine stretches help improve flexibility?
+    - Is it safe to do spine stretches every day?
+    - What are the different types of spine stretches?
+    - How do you do a spine stretch?
+    - What are the benefits of spine stretches?
+    - Is it better to do spine stretches before or after a workout?
+    - What is the best way to stretch my spine?
+    - What are some common mistakes people make when stretching their spine?
+    - How often should I stretch my spine?
+- intent: ask_ergonomic_tips
+  examples: |
+    - What are some are some tips for maintaining good posture while working at a desk?
+    - Tips for correct posture at my desk?
+    - How can I maintain proper posture while using a laptop?
+    - How can I reduce pressure on my lower back while working at a computer?
+    - Ergonomic tips?
+    - What are some ergonomic tips for reducing back pain?
+    - What are the tips for improving sitting posture?
+    - Can ergonomic tips help improve my posture?
+    - Do ergonomic tips help me be more productive at work?
+    - What are some ergonomic tips for working from home?
+    - How do I set up my workstation ergonomically?
+    - What are some common ergonomic mistakes people make?
+    - What are some ergonomic tips for reducing neck pain?
+    - What are sitting posture suggetions?
+    - what kind of chair should i use to ensure great sitting posture?
+- intent: ask_desk_setup
+  examples: |
+    - How should I set up my desk for better ergonomics?
+    - Can you provide guidance on arranging my workspace?
+    - Desk setup?
+    - Is it important to have a good desk setup?
+    - What are the components of a good desk setup?
+    - How do I adjust my chair to be ergonomically correct?
+    - What is the best height for my monitor?
+    - What are some things to consider when choosing a desk?
+    - What are some accessories that can help me improve my desk setup?
+    - What are some common mistakes people make when setting up their desks?
+    - What are the key elements of a proper desk setup?
+- intent: ask_chair_position
+  examples: |
+    - How should I position my chair for better posture?
+    - Can you give me tips on adjusting my chair correctly?
+    - Chair position?
+    - Is it important to adjust my chair position?
+    - What are the different ways to adjust my chair position?
+    - How do I know if my chair position is correct?
+    - What is the proper chair height for ergonomic seating?
+    - What are some ergonomic tips for adjusting my chair position?
+    - What are some things to consider when choosing a chair?
+    - What are some common mistakes people make when adjusting their chair positions?
+- intent: ask_monitor_placement
+  examples: |
+    - Where should I place my monitor for optimal ergonomics?
+    - Can you suggest the ideal position for my computer screen?
+    - Is it important to place my monitor correctly?
+    - Monitor placement?
+    - Do I need to have a special monitor stand for my computer?
+    - What are the different factors to consider when placing my monitor?
+    - How do I know if my monitor is placed correctly?
+    - What are the benefits of placing my monitor correctly?
+    - Should I place my monitor at eye level or slightly below?
+    - What are some ergonomic tips for placing my monitor?
+    - What are some accessories that can help me improve my monitor placement?
+    - What are some common mistakes people make when placing their monitors?
+    - How high should my monitor be for proper viewing?
+- intent: ask_keyboard_mouse_position
+  examples: |
+    - How should I position my keyboard and mouse for ergonomic use?
+    - Is it important to position my keyboard and mouse correctly?
+    - Keyboard mouse position?
+    - What are the different factors to consider when positioning my keyboard and mouse?
+    - How do I know if my keyboard and mouse are positioned correctly?
+    - What are some ergonomic tips for positioning my keyboard and mouse?
+    - What are some accessories that can help me improve my keyboard and mouse position?
+    - What are some common mistakes people make when positioning their keyboards and mice?
+    - Can you provide tips on the correct placement of my keyboard and mouse?
+    - What is the proper hand and wrist position for typing?
+- intent: ask_eye_strain_prevention
+  examples: |
+    - How can I prevent eye strain while working at a computer?
+    - Eye strain prevention?
+    - Can eye strain be prevented?
+    - What are some things I can do to prevent eye strain?
+    - What are the causes of eye strain?
+    - What are some ergonomic tips for preventing eye strain?
+    - What are some things to consider when choosing a computer monitor?
+    - What are some accessories that can help me prevent eye strain?
+    - How often should I take breaks from looking at screens?
+    - Can you give me tips on reducing eye fatigue during desk work?
+    - What are some strategies for protecting my eyes during screen time?
+    - how to i prevent eye strain when working on my computer?
+- intent: ask_stress_management
+  examples: |
+    - How can I manage stress while working at my desk?
+    - Stress management?
+    - Is stress management important?
+    - Can stress management help me be more productive?
+    - What are some different stress management techniques?
+    - How do I know if I'm stressed?
+    - What are some relaxation techniques that can help me manage stress?
+    - What are some healthy coping mechanisms for stress?
+    - What are some ways to reduce stress in my daily life?
+    - How do I deal with stress in a healthy way?
+    - What are some common mistakes people make when trying to manage stress?
+    - What are some stress relief techniques for desk-bound workers?
+    - Can you give me tips on reducing stress during office hours?
+- intent: ask_deep_breathing
+  examples: |
+    - How can I practice deep breathing to reduce stress?
+    - Can you guide me on deep breathing exercises for relaxation?
+    - What are some breathing techniques to help me calm down?
+- intent: ask_mindfulness
+  examples: |
+    - How can I practice mindfulness at my desk?
+    - deep breathing?
+    - Is deep breathing good for you?
+    - Can deep breathing help me relax?
+    - Is deep breathing a good way to manage stress?
+    - How do I do deep breathing?
+    - What are some different types of deep breathing exercises?
+    - What are some common mistakes people make when doing deep breathing?
+    - Can you give me tips on being more present and focused during work?
+    - What are some mindfulness exercises for stress reduction?
+- intent: ask_time_management
+  examples: |
+    - How can I manage my time effectively to reduce stress?
+    - Time management?
+    - Is time management important?
+    - Can time management help me be more productive?
+    - What are some different time management techniques?
+    - What are some common mistakes people make when managing their time?
+    - How often should I review my to-do list?
+    - What are some other benefits of time management?
+    - Can you provide tips on improving time management at work?
+    - What are some strategies for prioritizing tasks and deadlines?
+- intent: ask_work_life_balance
+  examples: |
+    - How can I maintain a healthy work-life balance?
+    - Work life balance?
+    - Is work-life balance important?
+    - Can work-life balance help me be more productive?
+    - How do I know if I have a good work-life balance?
+    - What are some common challenges to work-life balance?
+    - What are some ways to set boundaries between my work life and my personal life?
+    - How do I deal with work-life balance challenges?
+    - Can you give me tips on achieving a better balance between work and personal life?
+    - What are some strategies for avoiding burnout?
+- intent: ask_physical_activity
+  examples: |
+    - How can I incorporate physical activity into my desk-bound work routine?
+    - Pyshical activity?
+    - Is physical activity important for my health?
+    - Can physical activity help me lose weight?
+    - What are some different ways to incorporate physical activity into my daily life?
+    - How do I find an activity that I enjoy?
+    - What are some common mistakes people make when trying to be more active?
+    - Can you suggest exercises or stretches I can do during breaks?
+    - What are some ways to stay active while working at a desk?
+- intent: ask_diet_tips
+  examples: |
+    - What are some healthy eating tips for desk-bound workers?
+    - Diet tips?
+    - Is diet important for my health?
+    - What are some different ways to track my diet?
+    - How do I find a diet that is right for me?
+    - What are some common mistakes people make when trying to eat a healthy diet?
+    - Can you provide advice on maintaining a balanced diet while working at a desk?
+    - How can I make healthier food choices during office hours?
+- intent: ask_healthy_snacks
+  examples: |
+    - What are some healthy snack options for desk-bound workers?
+    - Healthy snacks?
+    - Are healthy snacks important for my diet?
+    - What are some healthy snacks that I can pack for work?
+    - How do I make healthy snacks at home?
+    - What are some healthy snacks that I can eat on the go?
+    - How do I deal with unhealthy snacking cravings?
+    - Can you suggest nutritious snacks I can keep at my desk?
+    - How can I satisfy my hunger with healthy snacks instead of unhealthy ones?
+- intent: ask_hydration_tips
+  examples: |
+    - How can I stay hydrated while working at my desk?
+    - Hydration tips?
+    - Is hydration important for my health?
+    - What are some different ways to stay hydrated throughout the day?
+    - How do I know if I am drinking enough water?
+    - What are some common mistakes people make when trying to stay hydrated?
+    - How do I deal with hydration challenges?
+    - What are some tips for drinking enough water during office hours?
+    - Can you provide advice on maintaining proper hydration levels?
+- intent: ask_portion_control
+  examples: |
+    - How can I practice portion control while working at a desk?
+    - Portion control?
+    - Is portion control important for my health?
+    - What are some different ways to control my portion sizes?
+    - How do I know if I am eating too much?
+    - What are some common mistakes people make when trying to control their portion sizes?
+    - How do I deal with portion control challenges?
+    - Can you provide tips on managing portion sizes during office hours?
+    - What are some strategies for avoiding overeating?
+
+
+
+
+
+
+
+
