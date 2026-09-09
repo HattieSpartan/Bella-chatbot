@@ -64,8 +64,8 @@ Python · Rasa Open Source · DIET (Dual Intent and Entity Transformer) · TED P
 ## How to run
 
 ```bash
-git clone https://github.com/HattieSpartan/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/HattieSpartan/Bella-chatbot.git
+cd Bella-chatbot
 pip install rasa==3.6.4
 rasa train
 rasa shell
